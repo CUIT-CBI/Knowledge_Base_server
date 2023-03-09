@@ -6,6 +6,8 @@ const _ = require('lodash');
 const ArticleRenderer = require('engine/koa/tutorial').ArticleRenderer;
 const localStorage = require('engine/local-storage').instance();
 const t = require('engine/i18n');
+const slug = require('limax');
+const { result } = require('lodash');
 
 t.requirePhrase('frontpage');
 
@@ -26,7 +28,7 @@ exports.get = async function (ctx, next) {
     tutorialTree: TutorialTree.instance(),
     topArticlesRendered
   };
-
+  //frontpage页面是html页面，locals页面是对象，也就是我们要传入的数据
   ctx.body = ctx.render('frontpage', locals);
 };
 
@@ -59,3 +61,42 @@ async function renderTop() {
   return articles;
 
 }
+
+
+//新增的search功能 
+exports.search = async function (ctx, next) {
+    const keyword = ctx.request.query.keyword;
+    // ctx.body = searchAll(keyword);
+    const result = await searchAll(keyword)
+    let locals = {
+      results:result
+    };
+    ctx.body = ctx.render('search',locals)
+  }
+
+const tree = TutorialTree.instance().bySlugMap;
+
+async function searchAll(keyword) {
+  const result = [];
+  await Object.keys(tree).forEach(key => {
+    const { title, content, slug } = tree[key];
+    const index = content.indexOf(keyword);
+    if (index != -1) {
+      const start = Math.max(index - 30.0, 0)
+      const end = index + 30.0;
+      const context = content.slice(start, end).replace(keyword, `<mark>${keyword}</mark>`);
+      result.push({
+        head: title,
+        content: context,
+        slug: slug
+      })
+    }
+  })
+
+  // console.log(result);
+  return result;
+}
+
+
+
+

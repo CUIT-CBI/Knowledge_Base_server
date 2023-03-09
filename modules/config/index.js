@@ -45,7 +45,7 @@ let config = module.exports = {
   plnkrAuthId: secret.plnkrAuthId,
 
   assetVersioning: env.ASSET_VERSIONING === 'file' ? 'file' :
-                     env.ASSET_VERSIONING === 'query' ? 'query' : null,
+                    env.ASSET_VERSIONING === 'query' ? 'query' : null,
 
   pug:   {
     basedir: path.join(process.cwd(), 'templates'),

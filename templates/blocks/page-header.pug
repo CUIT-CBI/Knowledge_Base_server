@@ -1,0 +1,11 @@
+header.header
+    //- 左侧标题
+    a(href='/..')
+        h1.header__title 教程网站
+    //- 右侧搜索框
+    form.header__search-form(action="/search", method="get", class="float-end ")
+      input.header__search-input(class="form-control position-absolute top-50 end-0 translate-middle",type="text",id="search-box", name="keyword", placeholder="Search...")
+      button.header__search-btn(type="submit", id="search-button",class="btn position-absolute top-50 end-50 translate-middle") 
+        span(class="bi bi-search") 
+    button(id="theme-switcher",class="btn") 
+      span(class="bi bi-toggle-off") 

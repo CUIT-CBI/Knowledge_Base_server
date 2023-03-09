@@ -1,0 +1,16 @@
+head 
+  style 
+    include ./bootstrap/bootstrap.min.css
+body
+  .container-lg
+    h1 Search results: #{keyword}
+    
+      each result in results
+        .row.justify-content-center
+          .col-6
+            h6
+              a(href=`/${result.slug}`, style="text-decoration: none;")= result.head
+            p.fs-6!= result.content
+  script 
+    include ./bootstrap/bootstrap.min.js
+  

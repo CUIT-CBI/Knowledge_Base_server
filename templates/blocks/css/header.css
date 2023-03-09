@@ -1,0 +1,36 @@
+.header {
+  height:70px;
+  width: 100%;
+  padding: 10px; 
+  position: relative ; 
+  top: 0;
+  z-index:1;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px rgb(193, 193, 193);
+  }
+  
+.header__title{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  position: absolute;
+  color: #39c0d2;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display: inline-block;
+  margin-left:6% ;
+  padding: 0;
+}
+
+.header__search-form{
+  height:auto;
+  width:20%;
+  display: inline-block;
+  position: absolute;
+  right:3%; 
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+#theme-switcher{
+  position: relative;
+  top: 50%;
+  transform: translate(-10%, -50%);
+}

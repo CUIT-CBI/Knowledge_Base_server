@@ -5,10 +5,12 @@ block html
   head
     block variables
     include ../blocks/head
+      
     block head
     !=js("footer", {defer: true})
 
-  body.no-icons
+  body
+    //- .text-bg-dark
     script head.fontTest();
 
     if footer || (footer === undefined)
@@ -16,4 +18,9 @@ block html
         block body
     else
       block body
+    
+    script(src="/mode/mode.js")
+    script
+      include ./js/bootstrap.min.js
+    
 

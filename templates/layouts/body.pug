@@ -1,8 +1,9 @@
 //- body + navigation(sitetoolbar + prev + next + sidebar) + content(article.main)
 extends ./html
-
 block body
-
+  header
+    include ../blocks/page-header
+      block header
   .page(class=[sidebar && 'page_sidebar_on', layout_page_class])
     script
       :uglify
@@ -15,20 +16,24 @@ block body
         setTimeout(function() {
           document.querySelector('.page').classList.add('page_sidebar-animation-on');
         }, 0);
-
+      
     block banner
 
-    block header
-
-    //- main content goes before sidebar (visitor will see it first)
+        //- main content goes before sidebar (visitor will see it first)
     .page__inner
+      
       main(class=(mainclass ? mainclass : 'main') + ' ' + [layout_main_class])
-        block main
+        block main 
+      
+        footer
+        include ../blocks/page-footer
+          block footer  
 
-    if sidebar
-      +b(class="sidebar page__sidebar #{sidebar.class}")
-        +e('button').toggle(data-sidebar-toggle)
-        block sidebar-buttons
-        +e.inner
-          +e.content
-            block sidebar
+      if sidebar  
+        +b(class="sidebar page__sidebar #{sidebar.class}", style="position:absolute;")
+          div.s-bar
+            +e('').toggle(data-sidebar-toggle)
+            block sidebar-buttons
+            +e.inner.small
+              +e.content
+                block sidebar   
