@@ -1,11 +1,12 @@
 header.header
-    //- 左侧标题
-    a(href='/..')
-        h1.header__title 教程网站
-    //- 右侧搜索框
-    form.header__search-form(action="/search", method="get", class="float-end ")
-      input.header__search-input(class="form-control position-absolute top-50 end-0 translate-middle",type="text",id="search-box", name="keyword", placeholder="Search...")
-      button.header__search-btn(type="submit", id="search-button",class="btn position-absolute top-50 end-50 translate-middle") 
-        span(class="bi bi-search") 
-    button(id="theme-switcher",class="btn") 
-      span(class="bi bi-toggle-off") 
+  nav.navbar.bg-body-tertiary.shadow-sm.mb-3
+    .container-fluid
+      a.navbar-brand.ms-5(href="../") 
+        h3 
+          b 知识库
+        //- button.d-flex.btn.btn-outline-success
+          span(class="bi bi bi-brightness-high")
+      form.d-flex.mt-1(action="/search", method="get", role="search")
+        input.form-control.me-2(type="search", name="keyword", placeholder="Search...",aria-label="Search")
+        button.btn.btn-outline-success.me-2(type="submit") 
+          span(class="bi bi-search")

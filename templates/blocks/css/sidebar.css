@@ -2,3 +2,22 @@
     position:sticky;
     top:0;
 }
+.s-bar h4{
+    text-indent: 2em;
+    font-size: medium;
+    color: grey;
+}
+.s-bar a{
+    text-indent: 0;
+}
+.s-bar .sidebar__navigation-link{
+    list-style: none; 
+    padding-left: 0; 
+    text-indent: 0;
+}
+.s-bar .sidebar__section{
+    text-indent: 2em;
+}
+.s-bar .sidebar__share{
+    text-indent: 1em;
+}

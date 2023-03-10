@@ -82,8 +82,8 @@ async function searchAll(keyword) {
     const { title, content, slug } = tree[key];
     const index = content.indexOf(keyword);
     if (index != -1) {
-      const start = Math.max(index - 30.0, 0)
-      const end = index + 30.0;
+      const start = Math.max(index - 100.0, 0)
+      const end = index + 100.0;
       const context = content.slice(start, end).replace(keyword, `<mark>${keyword}</mark>`);
       result.push({
         head: title,
