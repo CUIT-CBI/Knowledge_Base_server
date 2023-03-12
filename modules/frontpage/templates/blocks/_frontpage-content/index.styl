@@ -1,5 +1,5 @@
 .frontpage-content
-  background white
+  // background white
   outline none
 
   @media (min-width: media_step_3)
@@ -77,6 +77,7 @@
     counter-reset one
     padding 0
     margin 0
+    // color red
 
     &__title
       position relative
@@ -89,11 +90,12 @@
       margin-bottom 16px
 
     &__link
-        color text_grey_dark
+        color black
 
     &__item
       list-style none
       counter-increment one
+      
 
   .list-sub
     padding 0
@@ -137,6 +139,8 @@
     &__link
         font-size 16px
         line-height 23px
+        color #0077cc
+        text-decoration none
 
     &__item
       counter-increment two

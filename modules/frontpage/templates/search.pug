@@ -15,15 +15,14 @@ body
         
   .container-fluid
     .row.justify-content-md-center
-      .col-6
-        h4
-          b 搜索结果 #{keyword} 
-        ol(style="color")
-          each result in results
-            li
-              h6
-                a(href=`/${result.slug}`, style="text-decoration: none;")= result.head
-              p.fs-6!= result.content
+      .col-md-10.col-lg-8
+        h4.mb-4 搜索结果 #{keyword} 
+        
+        each result in results
+          .border.p-4.mb-4
+            h5
+              a(href=`/${result.slug}`, style="text-decoration: none;")= result.head
+            p.mb-0!= result.content
   script 
     include ./bootstrap/bootstrap.min.js
 

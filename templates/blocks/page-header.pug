@@ -1,12 +1,12 @@
 header.header
-  nav.navbar.bg-body-tertiary.shadow-sm.mb-3
+  nav.navbar.mb-3.border-bottom.border-secondary-subtle.border-4.bcolor
     .container-fluid
       a.navbar-brand.ms-5(href="../") 
-        h3 
+        h3.htitle
           b 知识库
-        //- button.d-flex.btn.btn-outline-success
-          span(class="bi bi bi-brightness-high")
       form.d-flex.mt-1(action="/search", method="get", role="search")
-        input.form-control.me-2(type="search", name="keyword", placeholder="Search...",aria-label="Search")
-        button.btn.btn-outline-success.me-2(type="submit") 
+        input.border-2.form-control.me-2(type="search", name="keyword", placeholder="Search...",aria-label="Search")
+        button.border-2.btn.btn-outline-success.me-2(type="submit") 
           span(class="bi bi-search")
+        button.border-2.btn.btn-outline-success.ms-auto.toggle-btn(type="button")
+          span(class="bi bi-brightness-high")

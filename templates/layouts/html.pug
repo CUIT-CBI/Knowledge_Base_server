@@ -9,8 +9,7 @@ block html
     block head
     !=js("footer", {defer: true})
 
-  body
-    //- .text-bg-dark
+  body.text-bg-light
     script head.fontTest();
 
     if footer || (footer === undefined)
@@ -22,5 +21,6 @@ block html
     script(src="/mode/mode.js")
     script
       include ./js/bootstrap.min.js
+      include ./js/mode.js
     
 
