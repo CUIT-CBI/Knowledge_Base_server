@@ -1,0 +1,237 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--7-1!node_modules/postcss-loader/src/index.js??ref--7-2!modules/engine/webpack/hover-loader.js!node_modules/stylus-loader/index.js??ref--7-4!tmp/en/styles.styl": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/index.js??ref--7-1!node_modules/postcss-loader/src/index.js??ref--7-2!modules/engine/webpack/hover-loader.js!node_modules/stylus-loader/index.js??ref--7-4!tmp/en/styles.styl": 0,
+          "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/css-loader/lib/url/escape.js": 1,
+          "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/css-loader/lib/css-base.js": 2,
+          "node_modules/file-loader/dist/cjs.js?name=[path][name].[ext]!modules/styles/blocks/font/icons.woff?5": 3,
+          "node_modules/file-loader/dist/cjs.js?name=[path][name].[ext]!modules/styles/blocks/page-footer/slack.svg": 4
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {
+          "0 mini-css-extract-plugin": 0
+        },
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--7-1!node_modules/postcss-loader/src/index.js??ref--7-2!modules/engine/webpack/hover-loader.js!node_modules/stylus-loader/index.js??ref--7-4!tmp/en/frontpage.styl": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/index.js??ref--7-1!node_modules/postcss-loader/src/index.js??ref--7-2!modules/engine/webpack/hover-loader.js!node_modules/stylus-loader/index.js??ref--7-4!tmp/en/frontpage.styl": 0,
+          "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/css-loader/lib/css-base.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {
+          "0 mini-css-extract-plugin": 0
+        },
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/isObject.js": 0,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/_root.js": 1,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/_Symbol.js": 2,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/throttle.js": 3,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/head/resizeOnload/index.js": 4,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/head/resizeOnload/iframeResize.js": 5,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/dom/getDocumentHeight.js": 6,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/dom/getScrollbarHeight.js": 7,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/debounce.js": 8,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/now.js": 9,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/_freeGlobal.js": 10,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/webpack/buildin/global.js": 11,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/toNumber.js": 12,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/_baseTrim.js": 13,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/_trimmedEndIndex.js": 14,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/isSymbol.js": 15,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/_baseGetTag.js": 16,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/_getRawTag.js": 17,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/_objectToString.js": 18,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/lodash/isObjectLike.js": 19,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/config.js": 20,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/delegate.js": 21,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/prism/makeLineNumbers.js": 22,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/console/consoleFormat.js": 23,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/head/index.js": 24,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/polyfill/index.js": 25,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/polyfill/dom.js": 26,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/polyfill/customEvent.js": 27,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/polyfill/dataset.js": 28,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/polyfill/hidden.js": 29,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/polyfill/requestAnimationFrame.js": 30,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/head/modal.js": 31,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/head/fontTest.js": 32,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/head/layout.js": 33,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/sidebar/client/index.js": 34,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/head/navigationArrows.js": 35,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/onSwipe.js": 36,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/head/hover.js": 37,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/head/trackLinks.js": 38,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/footer/index.js": 39,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/footer/showLinkType.js": 40,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/hoverIntent.js": 41,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/footer/load2x.js": 42,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/trackSticky.js": 43,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/koa/tutorial/client/index.js": 44,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/prism/index.js": 45,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/prism/core.js": 46,
+      "node_modules/prismjs/components/prism-core.js": 47,
+      "node_modules/prismjs/components/prism-markup.js": 48,
+      "node_modules/prismjs/components/prism-css.js": 49,
+      "node_modules/prismjs/components/prism-css-extras.js": 50,
+      "node_modules/prismjs/components/prism-clike.js": 51,
+      "node_modules/prismjs/components/prism-javascript.js": 52,
+      "node_modules/prismjs/components/prism-http.js": 53,
+      "node_modules/prismjs/components/prism-scss.js": 54,
+      "node_modules/prismjs/components/prism-sql.js": 55,
+      "node_modules/prismjs/components/prism-java.js": 56,
+      "node_modules/prismjs/components/prism-bash.js": 57,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/prism/codeBox.js": 58,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/client/isScrolledIntoView.js": 59,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/prism/makeHighlight.js": 60,
+      "node_modules/prismjs/prism.js": 61,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/i18n/t.js": 62,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/babelfish/index.js": 63,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/babelfish/lib/parser.js": 64,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!node_modules/plurals-cldr/index.js": 65,
+      "modules/engine/prism/locales sync /^\\.\\/.*\\.yml$/": 66,
+      "node_modules/json-loader/index.js!node_modules/yaml-loader/index.js!modules/engine/prism/locales/en.yml": 67,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/prism/codeTabsBox.js": 68,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/prism/proxyConsoleLog.js": 69,
+      "node_modules/babel-loader/lib/index.js??ref--6-0!modules/engine/koa/tutorial/client/itemSlider.js": 70,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/index.js??ref--7-1!node_modules/postcss-loader/src/index.js??ref--7-2!modules/engine/webpack/hover-loader.js!node_modules/stylus-loader/index.js??ref--7-4!tmp/en/styles.styl": 71,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/index.js??ref--7-1!node_modules/postcss-loader/src/index.js??ref--7-2!modules/engine/webpack/hover-loader.js!node_modules/stylus-loader/index.js??ref--7-4!tmp/en/frontpage.styl": 72,
+      "css node_modules/css-loader/index.js??ref--7-1!node_modules/postcss-loader/src/index.js??ref--7-2!modules/engine/webpack/hover-loader.js!node_modules/stylus-loader/index.js??ref--7-4!tmp/en/styles.styl 0": 73,
+      "css node_modules/css-loader/index.js??ref--7-1!node_modules/postcss-loader/src/index.js??ref--7-2!modules/engine/webpack/hover-loader.js!node_modules/stylus-loader/index.js??ref--7-4!tmp/en/frontpage.styl 0": 74
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23,
+      "24": 24,
+      "25": 25,
+      "26": 26,
+      "27": 27,
+      "28": 28,
+      "29": 29,
+      "30": 30,
+      "31": 31,
+      "32": 32,
+      "33": 33,
+      "34": 34,
+      "35": 35,
+      "36": 36,
+      "37": 37,
+      "38": 38,
+      "39": 39,
+      "40": 40,
+      "41": 41,
+      "42": 42,
+      "43": 43,
+      "44": 44,
+      "45": 45,
+      "46": 46,
+      "47": 47,
+      "48": 48,
+      "49": 49,
+      "50": 50,
+      "51": 51,
+      "52": 52,
+      "53": 53,
+      "54": 54,
+      "55": 55,
+      "56": 56,
+      "57": 57,
+      "58": 58,
+      "59": 59,
+      "60": 60,
+      "61": 61,
+      "62": 62,
+      "63": 63,
+      "64": 64,
+      "65": 65,
+      "66": 66,
+      "67": 67,
+      "68": 68,
+      "69": 69,
+      "70": 70,
+      "71": 71,
+      "72": 72,
+      "73": 73,
+      "74": 74
+    }
+  },
+  "chunks": {
+    "byName": {
+      "footer": 0,
+      "frontpage": 1,
+      "head": 2,
+      "styles": 3,
+      "tutorial": 4
+    },
+    "bySource": {
+      "0 footer": 0,
+      "0 frontpage": 1,
+      "0 head": 2,
+      "0 styles": 3,
+      "0 tutorial": 4
+    },
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}
