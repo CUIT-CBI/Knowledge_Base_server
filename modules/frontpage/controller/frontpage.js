@@ -92,8 +92,6 @@ async function searchAll(keyword) {
       })
     }
   })
-
-  // console.log(result);
   return result;
 }
 
