@@ -4,3 +4,14 @@
     left:95%;
     transform:translate(-50%,-50%);
 }
+.text-bg-code{
+    color:#fff!important;
+    background-color:#282A36!important;
+}
+.bg-code{
+    background-color:#282A36!important;
+}
+.border-code{
+    --bs-border-opacity:1;
+    border-color:#282A36!important
+}

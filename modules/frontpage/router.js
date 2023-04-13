@@ -15,8 +15,10 @@ let { userVlidator,
 let router = module.exports = new Router();
 
 router.get('/', frontpage.get);
-
+//map
+ router.get('/map', frontpage.map);
  router.get('/search',frontpage.search);
+ router.get('/loginput',frontpage.loginput);
 //注册接口
 //1.验证输入的密码和邮箱是否为空，是否存在
 //2.验证注册的邮箱是否存在

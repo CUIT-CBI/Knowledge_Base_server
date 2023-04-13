@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+
+  head
+    meta(charset="UTF-8")
+    title Animated Login Form
+
+  body
+    .box
+      form(autocomplete="off")
+        h2 Sign up
+        .inputBox
+          input(type="text", required="required")
+          span UserName
+          i
+        .inputBox
+          input(type="password", required="required")
+          span Password
+          i
+        .inputBox
+          input(type="password", required="required", id="confirmPassword")
+          span confirmPassword
+          i
+        input(type="submit", value="signup", onclick="validatePassword()")
+
+    script.
+      function validatePassword() {
+        var password = document.querySelector('input[type=password]').value;
+        var confirmPassword = document.querySelector('#confirmPassword').value;
+
+        if (password != confirmPassword) {
+          alert("Passwords do not match.");
+          return false;
+        }
+      }

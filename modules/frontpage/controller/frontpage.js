@@ -63,6 +63,32 @@ async function renderTop() {
 }
 
 
+//loginput
+exports.loginput = async function(ctx){
+  await ctx.render('login', { title: 'Animated Login Form' });
+}
+
+
+
+//map
+exports.map = async function (ctx, next) {
+  const maptitle =[]
+  await Object.keys(tree).forEach(key =>{
+    const {title,slug,isFolder} = tree[key];
+    maptitle.push({
+      head:title,
+      slug:slug,
+      isFolder:isFolder
+    })
+  });
+  let locals = {
+    results:maptitle
+  }
+  // console.log(maptitle)
+  ctx.body = ctx.render('map',locals)
+};
+
+
 //新增的search功能 
 exports.search = async function (ctx, next) {
     const keyword = ctx.request.query.keyword;
